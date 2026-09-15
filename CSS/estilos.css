@@ -1,0 +1,25 @@
+.Menu {
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.OpcionMenu {
+    display: inline;
+    list-style-type: none;
+    padding: 0 3rem;
+    margin: 0 3rem;
+    background-color: green;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
