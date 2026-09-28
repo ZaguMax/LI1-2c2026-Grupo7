@@ -1,3 +1,30 @@
+body {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: green;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: yellowgreen;
+}
+
 .Menu {
     font-size: 2rem;
     text-align: center;
@@ -12,11 +39,6 @@
     background-color: green;
     border-radius: 1rem;
     border: 2px solid black;
-}
-
-h1 {
-    text-align: center;
-    
 }
 
 a {
