@@ -1,47 +1,68 @@
-body {
-    font-family: "Montserrat";
-    font-size: 1rem;
-    line-height: 1.5;
+/* Variables (paleta de la ciudad) */
+:root {
+    --color-primario: #15d9f3;
+    --color-secundario: #1A2B4A;
+    --color-acento: #E8611A;
+    --color-fondo: #F7F9FA;
+    --color-texto: #1A1A1A;
+    --color-nav-texto: #FFFFFF;
 }
 
+/* Body / Tipografía global */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* Headings */
 h1 {
     font-size: 2rem;
-    color: red;
+    color: var(--color-secundario);
     text-align: center;
 }
 
 h2 {
     font-size: 1.5rem;
-    color: yellow;
+    color: var(--color-primario);
 }
 
 h3 {
     font-size: 1.3rem;
-    color: green;
+    color: var(--color-secundario);
 }
 
 h4 {
     font-size: 1.2rem;
-    color: yellowgreen;
+    color: var(--color-primario);
 }
 
+/* Navegación */
 .Menu {
-    font-size: 2rem;
-    text-align: center;
-    
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
 }
 
 .OpcionMenu {
-    display: inline;
-    list-style-type: none;
-    padding: 0 3rem;
-    margin: 0 3rem;
-    background-color: green;
+    padding: 0.5rem 2rem;
+    background-color: var(--color-primario);
     border-radius: 1rem;
-    border: 2px solid black;
+    border: 2px solid var(--color-secundario);
 }
 
 a {
     text-decoration: none;
 }
 
+.OpcionMenu a {
+    color: var(--color-nav-texto);
+}
+
+/* Hover del nav */
+.OpcionMenu:hover {
+    background-color: var(--color-acento);
+}
