@@ -47,22 +47,19 @@ h4 {
     list-style: none;
 }
 
-.OpcionMenu {
+.OpcionMenu a{
+    color: var(--color-nav-texto);
     padding: 0.5rem 2rem;
     background-color: var(--color-primario);
     border-radius: 1rem;
-    border: 2px solid var(--color-secundario);
+    border: 0.1rem solid var(--color-secundario);
 }
 
 a {
     text-decoration: none;
 }
 
-.OpcionMenu a {
-    color: var(--color-nav-texto);
-}
-
 /* Hover del nav */
-.OpcionMenu:hover {
+.OpcionMenu a:hover {
     background-color: var(--color-acento);
 }
