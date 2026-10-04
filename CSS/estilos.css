@@ -63,3 +63,23 @@ a {
 .OpcionMenu a:hover {
     background-color: var(--color-acento);
 }
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+/* Dirección / datos de contacto */
+address {
+    font-style: normal;
+}
+
+main address {
+    background-color: var(--color-fondo);
+    border-left: 0.3rem solid var(--color-primario);
+    padding: 1rem;
+    margin: 1rem 0;
+}
