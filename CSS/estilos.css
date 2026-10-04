@@ -64,6 +64,21 @@ a {
     background-color: var(--color-acento);
 }
 
+/* Header */
+header {
+    background-color: var(--color-secundario);
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    color: var(--color-nav-texto);
+    margin-bottom: 1rem;
+}
+
+header .Menu {
+    padding: 0;
+}
+
 /* Imágenes */
 img {
     max-width: 100%;
@@ -82,4 +97,27 @@ main address {
     border-left: 0.3rem solid var(--color-primario);
     padding: 1rem;
     margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-nav-texto);
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer .Menu {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+footer address {
+    margin-bottom: 0.5rem;
+}
+
+footer address a {
+    color: var(--color-nav-texto);
+    text-decoration: underline;
 }
