@@ -94,16 +94,24 @@ header .Menu {
     padding: 0;
 }
 
+/* Cards */
+
+#lugares-de-interes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    gap: 2px;
+    flex: 1px 1px;
+}
+
 main {
     padding: 2rem;
 }
 
 section {
     margin-bottom: 3rem;
-}
-
-article {
-    margin-bottom: 2rem;
 }
 
 p {
