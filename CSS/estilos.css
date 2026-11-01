@@ -82,18 +82,17 @@ a {
 /* Header */
 header {
     background-color: var(--color-secundario);
-    padding: 1.5rem 1rem;
-    position: sticky;   
+    padding: 0.75rem 1rem;
+    position: sticky;
     top: 0;
+    z-index: 1030;
 }
 
 header h1 {
     color: var(--color-nav-texto);
-    margin-bottom: 1rem;
-}
-
-header .Menu {
-    padding: 0;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.2;
 }
 
 /* Flexbox */
@@ -166,4 +165,68 @@ footer address {
 footer address a {
     color: var(--color-nav-texto);
     text-decoration: underline;
+}
+
+/* Bootstrap - personalizaciones (navbar) */
+header .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-nav-texto);
+}
+
+header .navbar-collapse {
+    padding-top: 0.75rem;
+}
+
+header .navbar-nav {
+    gap: 0.75rem;
+}
+
+header .nav-link {
+    color: var(--color-nav-texto);
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-primario);
+    border: 0.1rem solid var(--color-secundario);
+    border-radius: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header .nav-link:hover,
+header .nav-link:focus,
+header .nav-link.active {
+    color: var(--color-nav-texto);
+    background-color: var(--color-acento);
+}
+
+header .navbar-toggler {
+    border-color: var(--color-primario);
+}
+
+/* Bootstrap - personalizaciones (contacto: card, formulario y botones) */
+#contacto .card {
+    border: 0.1rem solid var(--color-primario);
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+}
+
+#contacto .card-title {
+    color: var(--color-secundario);
+}
+
+#contacto .form-control:focus,
+#contacto .form-select:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 0.25rem rgba(21, 166, 185, 0.25);
+}
+
+#contacto .btn-primary {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    transition: background-color 0.3s ease;
+}
+
+#contacto .btn-primary:hover {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
 }

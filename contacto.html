@@ -7,32 +7,91 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="CSS/estilos.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" >
     </head>
     <body>
         <header>
-            <h1>Ciudad de Valdoria</h1>
-            <nav aria-label="Navegación principal">
-                <ul class="Menu">
-                    <li class="OpcionMenu"><a href="index.html">Inicio</a></li>
-                    <li class="OpcionMenu"><a href="ciudad.html">Ciudad</a></li>
-                    <li class="OpcionMenu"><a href="lugares.html">Lugares</a></li>
-                    <li class="OpcionMenu"><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+                <div class="container-fluid">
+                    <h1 class="m-0"><a class="navbar-brand" href="index.html">Ciudad de Valdoria</a></h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuPrincipal">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <main>
-            <section>
+            <section id="contacto">
                 <h2>Contacto - Oficina de Turismo</h2>
                 <p>¿Estás planeando tu viaje a la capital de la República de Arkenia? Nuestro centro de información está a tu disposición para ayudarte con mapas, guías de los distintos barrios y recomendaciones sobre dónde alojarte.</p>
-                
-                <address>
-                    <p><strong>Dirección:</strong> Avenida del Lago Esmeralda 1450, Distrito Aurora, Ciudad de Valdoria.</p>
-                    <p><strong>Teléfono:</strong> <a href="tel:+55501987654">Llamanos al (555) 019-87654</a></p>
-                    <p><strong>Correo Electrónico:</strong> <a href="mailto:turismo@valdoria-arkenia.com">turismo@valdoria-arkenia.com</a></p>
-                </address>
+
+                <div class="alert alert-info" role="alert">
+                    Respondemos todas las consultas dentro de las 48 horas hábiles.
+                </div>
+
+                <div class="container-fluid px-0">
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-5">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">Datos de la oficina</h3>
+                                    <address>
+                                        <p><strong>Dirección:</strong> Avenida del Lago Esmeralda 1450, Distrito Aurora, Ciudad de Valdoria.</p>
+                                        <p><strong>Teléfono:</strong> <a href="tel:+55501987654">Llamanos al (555) 019-87654</a></p>
+                                        <p><strong>Correo Electrónico:</strong> <a href="mailto:turismo@valdoria-arkenia.com">turismo@valdoria-arkenia.com</a></p>
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-7">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title">Escribinos tu consulta</h3>
+                                    <form action="mailto:turismo@valdoria-arkenia.com" method="post" enctype="text/plain">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-6">
+                                                <label for="nombre" class="form-label">Nombre</label>
+                                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="email" class="form-label">Correo electrónico</label>
+                                                <input type="email" class="form-control" id="email" name="email" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="motivo" class="form-label">Motivo de la consulta</label>
+                                                <select class="form-select" id="motivo" name="motivo">
+                                                    <option value="barrios">Información sobre los barrios</option>
+                                                    <option value="lugares">Lugares y actividades</option>
+                                                    <option value="alojamiento">Alojamiento</option>
+                                                    <option value="otro">Otro</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="mensaje" class="form-label">Mensaje</label>
+                                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                                            </div>
+                                            <div class="col-12 d-flex gap-2">
+                                                <button type="submit" class="btn btn-primary">Enviar consulta</button>
+                                                <button type="reset" class="btn btn-outline-secondary">Borrar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section>
@@ -64,5 +123,6 @@
             </address>
             <p>© 2026 Oficina de Turismo de Valdoria. Todos los derechos reservados.</p>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
