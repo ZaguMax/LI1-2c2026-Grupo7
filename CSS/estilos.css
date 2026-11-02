@@ -97,14 +97,15 @@ header h1 {
 
 /* Flexbox */
 
-#lugares-de-interes {
-    display: flex;
-    flex-wrap: wrap;
+
+.contenedor-tarjetas {
+    pantalla: flexible;
+    flex-wrap: envoltura;
+    espacio: 20px;
 }
 
-.card {
-    gap: 2px;
-    flex: 1px 1px;
+.contenedor-tarjetas .card {
+    flex: 1 1 300px;
 }
 
 main {
