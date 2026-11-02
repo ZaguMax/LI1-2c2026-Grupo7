@@ -230,3 +230,20 @@ header .navbar-toggler {
     background-color: var(--color-acento);
     border-color: var(--color-acento);
 }
+/* Posicionamiento */
+html {
+    scroll-padding-top: 5rem;
+}
+
+.imagen-etiquetada {
+    position: relative;
+    display: inline-block;
+}
+
+.etiqueta-imagen {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--color-secundario);
+    font-size: 0.85rem;
+}
