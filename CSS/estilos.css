@@ -99,9 +99,9 @@ header h1 {
 
 
 .contenedor-tarjetas {
-    pantalla: flexible;
-    flex-wrap: envoltura;
-    espacio: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .contenedor-tarjetas .card {
