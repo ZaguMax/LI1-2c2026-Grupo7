@@ -249,3 +249,9 @@ html {
     background-color: var(--color-secundario);
     font-size: 0.85rem;
 }
+
+/* Modo oscuro */
+body.oscuro {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
