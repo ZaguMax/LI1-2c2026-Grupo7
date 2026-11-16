@@ -16,7 +16,7 @@
                 <div class="container-fluid">
                     <h1 class="m-0"><a class="navbar-brand" href="index.html">Ciudad de Valdoria</a></h1>
                     <div class="form-check form-switch text-white ms-3">
-                        <input class="form-check-input" type="checkbox" role="switch" id="btn-modo">
+                        <input class="form-check-input" type="checkbox" role="switch" id="btn-modo" autocomplete="off">
                         <label class="form-check-label" for="btn-modo">Modo oscuro</label>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar u ocultar el menú">
@@ -62,7 +62,7 @@
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h3 class="card-title">Escribinos tu consulta</h3>
-                                    <form action="mailto:turismo@valdoria-arkenia.com" method="post" enctype="text/plain">
+                                    <form id="formulario" action="mailto:turismo@valdoria-arkenia.com" method="post" enctype="text/plain" novalidate>
                                         <div class="row g-3">
                                             <div class="col-12 col-md-6">
                                                 <label for="nombre" class="form-label">Nombre</label>
@@ -91,6 +91,8 @@
                                             </div>
                                         </div>
                                     </form>
+                                    <div id="respuesta-formulario" role="status"></div>
+                                    <div id="resultado-html"></div>
                                 </div>
                             </div>
                         </div>
