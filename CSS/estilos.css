@@ -45,7 +45,7 @@ h2 {
 h3 {
     font-size: 1.3rem;
     color: var(--color-titulo);
-     margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 h4 {
@@ -268,6 +268,28 @@ body.oscuro {
 
 .tarjeta-lugar .imagen-etiquetada {
     display: block;
+}
+
+/* Índice de Ciudad y menú de otros barrios: tarjetas clickeables */
+.indice-tarjeta {
+    padding: 1.25rem 0.75rem;
+    border: 0.1rem solid var(--color-primario);
+    border-radius: 1rem;
+    color: var(--color-titulo);
+    font-weight: 600;
+    justify-content: center;
+}
+
+.indice-tarjeta:hover {
+    transform: translateY(-4px);
+    background-color: var(--color-primario);
+    color: var(--color-nav-texto);
+}
+
+.indice-icono {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Footer: botones del menú */
